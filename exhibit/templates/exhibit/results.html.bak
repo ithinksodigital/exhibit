@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %} {% if photos %}
+<div class="container">
+<div class="row">
+    <div class="col-sm">test</div>
+</div>
+  <div class="row">
+    <div class="gallery" id="gallery">
+      {% for photo in photos %}
+      <div class="mb-3 pics animation all 4">
+        <img
+          class="img-fluid"
+          src="{{ photo.photo_file.url }}"
+          alt="{{ photo.photo_title }}"
+        />
+        {% if photo.was_published_recently %}
+        <span class="badge badge-success">New! </span>
+        <strong>{{ photo.photo_title }}</strong> by {{ photo.owner }},
+        likes: {{ photo.photo_like }}
+
+        {% else %}
+
+        <br /><strong>{{ photo.photo_title }}</strong> by {{ photo.owner }},likes: {{ photo.photo_like }}
+
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% else %}
+<h3>empty</h3>
+{% endif %} {% endblock %}

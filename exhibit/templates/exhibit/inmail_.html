@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if not DoesNotExist %}
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+
+            <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action disabled"> Wiadomość od:</a>
+
+            {% for inmail in inmails %}
+            <a href="{% url 'inmail' inmail.pk %}" class="list-group-item list-group-item-action flex-column align-items-start ">
+            <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{ inmail.from_user }} - {{ inmail.title_txt }}</h5>
+            <small>{{ inmail.send }}</small>
+            </div>
+            <p class="mb-1">{{ inmail.message_txt }}</p>
+            <small></small>
+            </a>
+            {% endfor %}
+            </div></div>
+
+        <div class="col-sm-6">
+        <div class="card text-left">
+        <div class="card-header">
+        Wiadomość od użytkownika <strong>{{ inmail.from_user }}</strong>
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">Tytuł: {{ inmail.title_txt }}</h5>
+        <p class="card-text">{{ inmail.message_txt }}</p>
+        <a href="#" class="btn btn-primary">Reply</a>
+        </div>
+        <div class="card-footer text-muted">
+        {{ inmail.send }}
+        </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+    {% else %}
+        <p>Nie ma takiej wiadomosci</p>
+
+    {% endif %}
+
+                <script>
+  $("#id_message_txt").addClass("form-control");
+  $("#id_to_user").addClass("form-control");
+  $("#id_title_txt").addClass("form-control");
+
+                </script>
+{% endblock %}
+
+
+
+
+

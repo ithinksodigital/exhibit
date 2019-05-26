@@ -1,0 +1,42 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+ <div class="container-fluid">
+ <div class="row">
+     <div class="col-sm"></div>
+     <div class="col-sm">
+
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>Dostęp zabrioniony.</strong> <a style="color: #721B24" href="{% url 'login' %}">Zaloguj się.</a>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+     <br />
+
+
+     </div>
+     <div class="col-sm"></div>
+ </div>
+ </div>
+                <script>
+  $("#id_useremail").addClass("form-control");
+  $("#id_msgtitle").addClass("form-control");
+  $("#id_password2").addClass("form-control");
+  $("#id_msg").addClass("form-control");
+                </script>
+{% endblock %}
+        </div>
+
+
+
+

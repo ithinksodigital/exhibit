@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if DoesNotExist %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>{{ username }}</strong>, taka wiadomość nie istnieje!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+    {% endif %}
+    {% if not success %}
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>{{ username }}</strong>, witaj w nowym InMail!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+    {% else %}
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>{{ username }}</strong>, wiadomość wysłana poprawnie
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+    {% endif %}
+ <div class="row">
+
+     <div class="col-sm"></div>
+     <div class="col-6">
+
+{% if inmails %}
+<div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action disabled"> Wiadomość od:</a>
+
+    {% for inmail in inmails %}
+        <a href="{% url 'inmail' inmail.pk %}" class="list-group-item list-group-item-action flex-column align-items-start ">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ inmail.from_user }} - {{ inmail.title_txt }}</h5>
+      <small>{{ inmail.send }}</small>
+    </div>
+    <p class="mb-1">{{ inmail.message_txt }}</p>
+    <small></small>
+  </a>
+    {% endfor %}
+</div>
+{% endif %}
+
+
+
+
+
+
+     <br />
+
+
+     </div>
+     <div class="col-sm-3">
+
+         <h2>Wyślij wiadomość</h2>
+     <div class="form-group fluid">
+  <form method="post" class="post-form" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+      </p>
+    <button type="submit" class="btn btn-outline-success btn-block">Wyślij wiadomość</button>
+  </form>
+     </div>
+ </div>
+ <div class="col-sm"></div>
+ </div>
+                <script>
+  $("#id_message_txt").addClass("form-control");
+  $("#id_to_user").addClass("form-control");
+  $("#id_title_txt").addClass("form-control");
+
+                </script>
+{% endblock %}
+        </div>
+
+
+
+

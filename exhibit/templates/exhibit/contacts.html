@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block content %}
+
+    {% if alert %}
+    {{ alert }}
+    {% endif %}
+
+    {% if contacts %}
+
+        <div class="container">
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                {% for contact in contacts %}
+                <div class="card border-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Twój przyjaciel:</div>
+  <div class="card-body text-dark">
+    <h5 class="card-title">{{ contact.user_to }}</h5>
+    <p class="card-text">Jesteście znajomymi od {{ contact.created }}</p>
+  </div>
+</div>
+                {% endfor %}
+            </div>
+            <div class="col-sm"></div>
+        </div>
+        </div>
+
+        {% else %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+
+                <div class="alert alert-danger" role="alert">
+  Nie masz jeszcze żadnych znajomych.
+</div>
+
+            </div>
+            <div class="col-sm"></div>
+        </div>
+        </div>
+    {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <div class="container-fluid">
+ <div class="row">
+     <div class="col-sm"></div>
+     <div class="col-sm">
+
+         <h2>Prześlij wiadomość</h2>
+     <div class="form-group fluid">
+  <form method="post" class="post-form" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+      </p>
+    <button type="submit" class="btn btn-outline-success btn-block">Dodaj</button>
+  </form></div>
+
+
+
+     <br />
+
+
+     </div>
+     <div class="col-sm"></div>
+ </div>
+ </div>
+                <script>
+  $("#id_useremail").addClass("form-control");
+  $("#id_msgtitle").addClass("form-control");
+  $("#id_password2").addClass("form-control");
+  $("#id_msg").addClass("form-control");
+                </script>
+{% endblock %}
+        </div>
+
+
+
+

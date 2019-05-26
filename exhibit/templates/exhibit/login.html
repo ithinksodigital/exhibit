@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+            {% block content %}
+ <div class="container-fluid">
+ <div class="row">
+     <div class="col-sm"></div>
+     <div class="col-sm">
+        <form method="POST">
+
+        {% csrf_token %}
+                    {% for error in form.errors %}
+            <div class="alert alert-danger" role="alert">
+ Uwaga
+</div>
+                                    <span class="text-danger small">{{ field.errors }}</span>
+
+        {% endfor %}
+        {{form.as_p}}
+            <button class="btn btn-outline-info btn-block" type="submit">Login</button>
+        </form><br />
+        Nie masz konta? <a href="{% url 'signup' %}" ><strong>Załóż je teraz</strong>!</a>
+
+     </div>
+     <div class="col-sm"></div>
+ </div>
+ </div>
+                <script>
+  $("#id_username").addClass("form-control");
+  $("#id_password").addClass("form-control");
+
+                </script>
+{% endblock %}
+        </div>
+
+
+
+

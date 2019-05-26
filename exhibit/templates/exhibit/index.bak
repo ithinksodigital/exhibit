@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block content %} {% if photos %}
+{#Jumbotron#}
+
+    <div class="jumbotron" style="background-color:#F8F9FA">
+  <h1 class="display-4">Exhibit</h1>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim urna eget bibendum dapibus. Etiam vehicula quis quam id pellentesque. Cras quis ante elementum, laoreet metus quis, eleifend dui. Proin semper facilisis mi, nec sagittis nulla vulputate vitae.</p>
+
+   <form method="get" action="{% url 'search' %}" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-lg-1" id= "search-input" type="text" name="q" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" style="display:none;" type="submit">Search</button>
+    </form>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="gallery" id="gallery">
+      {% for photo in photos %}
+      <div class="mb-3 pics animation all 4">
+        <img
+          class="img-fluid"
+          src="{{ photo.photo_file.url }}"
+          alt="{{ photo.photo_title }}"
+        />
+        {% if photo.was_published_recently %}
+        <span class="badge badge-success">New! </span>
+        <strong>{{ photo.photo_title }}</strong> by {{ photo.owner }},
+        likes: {{ photo.photo_like }}
+
+        {% else %}
+
+        <br /><strong>{{ photo.photo_title }}</strong> by {{ photo.owner }},likes: {{ photo.photo_like }}
+
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% else %}
+<h3>empty</h3>
+{% endif %} {% endblock %}
