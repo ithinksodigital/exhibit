@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7cd9628-db97-4d25-b214-af26811e2fa6" name="Default Changelist" comment="" />
+    <list default="true" id="b7cd9628-db97-4d25-b214-af26811e2fa6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/djangoapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoapp/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/djangoapp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="27" column="96" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
+            <state relative-caret-position="422">
+              <caret line="168" column="28" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -258,12 +260,12 @@
       <workItem from="1558853325923" duration="18010000" />
       <workItem from="1559503530074" duration="51000" />
       <workItem from="1559503834807" duration="337000" />
-      <workItem from="1560363238242" duration="686000" />
+      <workItem from="1560363238242" duration="1009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88155000" />
+    <option name="totallyTimeSpent" value="88478000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,6 +278,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18669528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -590,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/djangoapp/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="27" column="96" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
+        <state relative-caret-position="422">
+          <caret line="168" column="28" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
         </state>
       </provider>
     </entry>

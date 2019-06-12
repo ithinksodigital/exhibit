@@ -166,4 +166,4 @@ LOGIN_REDIRECT_URL = 'index'
 
 
 
-EMAIL_HOST_PASSWORD = 'sprawny123'
+EMAIL_HOST_PASSWORD = 'xxxxx'
