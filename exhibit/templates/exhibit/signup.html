@@ -29,8 +29,12 @@
         {% endfor %}
       </p>
     {% endfor %}
-    <button type="submit" class="btn btn-outline-success btn-block">Zarejestruj się</button>
-  </form></div>
+    <button type="submit" class="btn btn-outline-dark btn-block">Zarejestruj się</button>
+  </form></div><br/>
+
+      <a href="{% url 'social:begin' 'github' %}" {% url 'social:begin' 'github' %}class="btn btn-block btn-social btn-github">
+    <span class="fa fa-github"></span> Sign in with Github
+  </a>
 
 
 

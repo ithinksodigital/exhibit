@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7cd9628-db97-4d25-b214-af26811e2fa6" name="Default Changelist" comment="" />
+    <list default="true" id="b7cd9628-db97-4d25-b214-af26811e2fa6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/exhibit/migrations/0027_vote.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exhibit/migrations/0028_vote_liked_on.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exhibit/static/assets/bootstrap/css/bootstrap-social.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exhibit/static/assets/bootstrap/css/docs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exhibit/static/assets/bootstrap/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoapp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/inmail.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/inmail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/inmail_.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/inmail_.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/newsletter.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/newsletter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/user_p.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/user_p.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exhibit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,97 +37,12 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exhibit/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="264" column="48" selection-start-line="264" selection-start-column="48" selection-end-line="264" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-                <marker date="1558858132121" expanded="true" signature="7330:7425" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exhibit/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/inmail_.html">
+        <entry file="file://$PROJECT_DIR$/djangoapp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/inmail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/notlogin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exhibit/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/success.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+            <state relative-caret-position="186">
+              <caret line="27" column="96" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -119,16 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>owner</find>
-      <find>span&gt;lo</find>
-      <find>danger</find>
-      <find>utw</find>
-      <find>b</find>
-      <find>jumbo</find>
-      <find>zalog</find>
-      <find>logout</find>
-      <find>tag</find>
-      <find>save</find>
       <find>opp</find>
       <find>znajom</find>
       <find>searc</find>
@@ -144,6 +74,21 @@
       <find>me</find>
       <find>filt</find>
       <find>inmail</find>
+      <find>wys</find>
+      <find>index</find>
+      <find>h</find>
+      <find>@</find>
+      <find>follo</find>
+      <find>login</find>
+      <find>get</find>
+      <find>q</find>
+      <find>deta</find>
+      <find>like</find>
+      <find>filter</find>
+      <find>detail</find>
+      <find>photos</find>
+      <find>follow</find>
+      <find>foll</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,39 +98,42 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/exhibit/templates/index.html" />
-        <option value="$PROJECT_DIR$/djangoapp/urls.py" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/singup.html" />
-        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/signup.html" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/add_photo.html" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/index.bak" />
         <option value="$PROJECT_DIR$/exhibit/templates/contacts.html" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/contacts.html" />
-        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/login.html" />
-        <option value="$PROJECT_DIR$/djangoapp/settings.py" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/contact_form.html" />
-        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/results.html" />
-        <option value="$PROJECT_DIR$/exhibit/static/css/style.css" />
         <option value="$PROJECT_DIR$/exhibit/static/js/app.js" />
-        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/newsletter.html" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/success.html" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/bad.html" />
-        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/user_p.html" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/notlogin.html" />
-        <option value="$PROJECT_DIR$/exhibit/models.py" />
         <option value="$PROJECT_DIR$/exhibit/forms.py" />
-        <option value="$PROJECT_DIR$/exhibit/admin.py" />
+        <option value="$PROJECT_DIR$/djangoapp/urls.py" />
+        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/login.html" />
+        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/signup.html" />
+        <option value="$PROJECT_DIR$/exhibit/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/exhibit/models.py" />
         <option value="$PROJECT_DIR$/exhibit/urls.py" />
-        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/index.html" />
-        <option value="$PROJECT_DIR$/exhibit/views.py" />
+        <option value="$PROJECT_DIR$/exhibit/admin.py" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/inmail.html" />
         <option value="$PROJECT_DIR$/exhibit/templates/exhibit/inmail_.html" />
+        <option value="$PROJECT_DIR$/exhibit/views.py" />
+        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/detail.html" />
+        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/index.html" />
+        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/user_p.html" />
+        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/newsletter.html" />
+        <option value="$PROJECT_DIR$/exhibit/templates/exhibit/results.html" />
+        <option value="$PROJECT_DIR$/djangoapp/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-1" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,11 +154,24 @@
               <item name="djangoapp" type="462c0819:PsiDirectoryNode" />
               <item name="djangoapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="djangoapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoapp" type="462c0819:PsiDirectoryNode" />
+              <item name="exhibit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangoapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangoapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,12 +280,15 @@
       <workItem from="1558772605796" duration="33000" />
       <workItem from="1558772642269" duration="12939000" />
       <workItem from="1558809192835" duration="5997000" />
-      <workItem from="1558853325923" duration="4226000" />
+      <workItem from="1558853325923" duration="18010000" />
+      <workItem from="1559503530074" duration="51000" />
+      <workItem from="1559503834807" duration="337000" />
+      <workItem from="1560363238242" duration="528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73297000" />
+    <option name="totallyTimeSpent" value="87997000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,8 +300,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18669528" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32873276" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.36386448" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3083049" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32764506" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3190272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -359,7 +349,7 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -389,9 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/singup.html" />
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/django/shortcuts.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -400,24 +387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="23" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/index.bak">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -435,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2862">
-          <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exhibit/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -449,39 +415,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/contact_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/user_p.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="n#STYLE#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -502,63 +439,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="60" column="79" selection-start-line="60" selection-start-column="79" selection-end-line="60" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/newsletter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exhibit/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangoapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#633#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -573,45 +459,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/index.html">
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/success.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/static/assets/bootstrap/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="180" column="7" selection-start-line="180" selection-start-column="7" selection-end-line="180" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/static/assets/bootstrap/js/bootstrap.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="179" column="7" selection-start-line="179" selection-start-column="7" selection-end-line="179" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="67" column="30" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exhibit/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="314">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/views.py">
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/user_p.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="264" column="48" selection-start-line="264" selection-start-column="48" selection-end-line="264" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-            <marker date="1558858132121" expanded="true" signature="7330:7425" ph="..." />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/newsletter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="5" selection-start-line="8" selection-start-column="41" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="20" column="179" selection-start-line="20" selection-start-column="179" selection-end-line="20" selection-end-column="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/results.html.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/inmail_.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="17" column="36" selection-start-line="17" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/inmail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exhibit/templates/exhibit/inmail_.html">
+    <entry file="file://$PROJECT_DIR$/exhibit/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="466">
+          <caret line="285" column="30" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+            <marker date="1558879115586" expanded="true" signature="7524:7619" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangoapp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="27" column="96" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
         </state>
       </provider>
     </entry>

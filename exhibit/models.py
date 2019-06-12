@@ -60,3 +60,9 @@ class InMail(models.Model):
     send = models.DateTimeField(auto_now_add=True, db_index=True)
     title_txt = models.CharField(max_length=100, default="Nowa wiadomość InMail")
     message_txt = models.TextField()
+
+
+class Vote(models.Model):
+    user_vote = models.ForeignKey(User, related_name="user_vote", on_delete=models.CASCADE)
+    photo_vote = models.ForeignKey(Photo, related_name="photo_vote", on_delete=models.CASCADE)
+    liked_on = models.DateTimeField(auto_now_add=True, db_index=True)

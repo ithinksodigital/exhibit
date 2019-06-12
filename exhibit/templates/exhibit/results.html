@@ -18,7 +18,7 @@
             <h5  type="text" value="{{ user.pk }} class="card-title"> {{ user.username }} </h5><br/>
             <p class="card-text"><small class="ext-muted"> Użytkownik <strong>{{ user.username }} </strong>dołączył do <i>Exhibit</i> {{ user.date_joined }}</small></p>
             <input  class="form-control mr-lg-1" id= "search-input" type="hidden" name="f" placeholder="Search"  value="{{ user.pk }}"aria-label="Search"><br/>
-            <button style="display: block" class="btn btn-outline-success my-2 my-sm-0"  type="submit" onsubmit="$('#search-input').val($('h5.card-title').attr('value'))">Follow</button>
+            <button style="display: block" class="btn btn-outline-success my-2 my-sm-0"  type="submit" onsubmit="$('#search-input').val($('h5.card-title').attr('value'))">Obserwuj</button>
         </form>
     </div>
 </div>
@@ -41,11 +41,11 @@
     <div class="gallery" id="gallery">
       {% for photo in photos %}
       <div class="mb-3 pics animation all 4">
-        <img
+        <a href="{% url 'detail' photo.pk %}"><img
           class="img-fluid"
           src="{{ photo.photo_file.url }}"
           alt="{{ photo.photo_title }}"
-        />
+        /></a>
         {% if photo.was_published_recently %}
         <span class="badge badge-success">New! </span>
         <strong>{{ photo.photo_title }}</strong> by {{ photo.owner }},

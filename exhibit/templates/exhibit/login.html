@@ -17,14 +17,18 @@
 
         {% endfor %}
         {{form.as_p}}
-            <button class="btn btn-outline-info btn-block" type="submit">Login</button>
+            <button class="btn btn-outline-dark btn-block" type="submit">Login</button>
         </form><br />
-        Nie masz konta? <a href="{% url 'signup' %}" ><strong>Załóż je teraz</strong>!</a>
+        Nie masz konta? <a href="{% url 'signup' %}" style="color:#2B2B2B" ><strong>Załóż je teraz</strong>!</a><br/><br/>
+       <a href="{% url 'social:begin' 'github' %}" {% url 'social:begin' 'github' %}class="btn btn-block btn-social btn-github">
+    <span class="fa fa-github"></span> Sign in with Github
+  </a>
 
      </div>
      <div class="col-sm"></div>
  </div>
  </div>
+
                 <script>
   $("#id_username").addClass("form-control");
   $("#id_password").addClass("form-control");

@@ -1,0 +1,70 @@
+{% extends 'base.html' %} {% block content %}
+<style>
+.zoom:hover {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+#hover_txt:hover + #hover_txt{
+  opacity:1;
+}
+#hover_txt:hover{
+  opacity:1;
+}
+
+#hover_txt{
+    font-size: 80px;
+    position:absolute;
+    border:0px solid;
+    top:25%;
+    width:100%;
+    text-align:center;
+    opacity:0;
+    transition: 0.5s;
+}
+
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+</style>
+{% if photo %}
+    {% if q == "votebefore" %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Juz głosowałeś na to zdjęcie!</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+        {% elif q == "success" %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Oddano głos!</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+        {% endif %}
+<div class="container">
+<div class="row" style="padding-bottom: 25px;" >
+    <div class="col-sm"></div>
+</div>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="zoom text col-sm">
+<a href="{% url 'like' photo.pk  %} ">        <img class="img-fluid" src="{{  photo.photo_file.url }}">
+</a>
+        <p><strong>Liked: {{ liked }}</strong></p>
+        <div class="strokeme"id='hover_txt'> click to like!</div>
+    </div>
+    <div class="col-3"></div>
+</div>
+</div>
+
+
+
+
+
+{% endif %}
+
+{% endblock %}

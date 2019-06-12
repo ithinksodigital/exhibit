@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 
@@ -18,7 +18,8 @@ urlpatterns = [
     path("newsletter/", views.newsletter, name="newsletter"),
     path("inmails/", views.inmails, name="inmails"),
     path("inmail/<int:inmail_id>", views.inmail, name="inmail"),
-
+    path("detail/<int:img_id>", views.detail, name="detail"),
+    path("like/<int:img_id>", views.like, name="like"),
 
 
 ]

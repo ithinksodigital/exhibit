@@ -10,6 +10,8 @@ from .models import *
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.core.mail import send_mail, BadHeaderError
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 
 
 def index(request):
@@ -33,7 +35,7 @@ def user(request, username):
     # u = User.objects.all()
     # return HttpResponse(u)
 
-
+@login_required
 def me(request):
     username = None
     if request.user.is_authenticated:
@@ -85,7 +87,7 @@ def logout_request(request):
     messages.info(request, "Logged out successfully!")
     return redirect("index")
 
-
+@login_required
 def photo_add(request):
     if request.user.is_authenticated:
         username= None
@@ -124,7 +126,7 @@ def search(request):
     else:
         return render(request, 'exhibit/results.html', context={'empty':'empty'})
 
-
+@login_required
 def follow(request):
     if request.user.is_authenticated:
 
@@ -139,7 +141,7 @@ def follow(request):
         return redirect('contacts')
     else:
         return render(request, 'exhibit/notlogin.html')
-
+@login_required
 def contacts(request):
     if request.user.is_authenticated:
         username = request.user.username
@@ -150,6 +152,7 @@ def contacts(request):
     else:
         return render(request, 'exhibit/notlogin.html')
 
+@login_required
 def send_message(request):
     if request.user.is_authenticated:
         username= None
@@ -183,7 +186,7 @@ def send_message(request):
     else:
         return render(request, 'exhibit/notlogin.html')
 
-
+@login_required
 def newsletter(request):
     if request.user.is_authenticated:
 
@@ -211,7 +214,7 @@ def newsletter(request):
     else:
         return render(request, 'exhibit/notlogin.html')
 
-
+@login_required
 def inmails(request):
     if request.user.is_authenticated:
         username = None
@@ -234,6 +237,7 @@ def inmails(request):
     else:
         return render(request, 'exhibit/notlogin.html')
 
+@login_required
 def inmail(request, inmail_id):
     if request.user.is_authenticated:
         try:
@@ -269,3 +273,38 @@ def inmail(request, inmail_id):
 
     else:
         return render(request, 'exhibit/notlogin.html')
+
+@login_required
+def detail(request, img_id):
+    try:
+        q = request.GET.get('q')
+        img_id = img_id
+        photo = Photo.objects.get(pk=img_id)
+        liked = Vote.objects.filter(photo_vote=photo)
+        liked = len(liked)
+        context={'photo':photo,
+                 'q':q, 'liked':liked}
+        return render(request, 'exhibit/detail.html',context )
+    except:
+        pass
+
+@login_required
+def like(request, img_id):
+    if request.user.is_authenticated:
+        username = None
+        username = request.user.username
+        user = User.objects.get(username=username)
+        photo = Photo.objects.get(pk=img_id)
+        v = Vote.objects.filter(user_vote=user, photo_vote=photo)
+        print('log!!!! ')
+        print(v)
+        if not v:
+            v = Vote(user_vote=user, photo_vote=photo)
+            v.save()
+            back = '../detail/'+str(img_id)+'?q=success'
+            return redirect(back)
+        else:
+             back = '../detail/'+str(img_id)+'?q=votebefore'
+             return redirect(back)
+
+
