@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7cd9628-db97-4d25-b214-af26811e2fa6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exhibit/migrations/0027_vote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exhibit/migrations/0028_vote_liked_on.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exhibit/static/assets/bootstrap/css/bootstrap-social.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exhibit/static/assets/bootstrap/css/docs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exhibit/static/assets/bootstrap/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoapp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/inmail.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/inmail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/inmail_.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/inmail_.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/newsletter.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/newsletter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/templates/exhibit/user_p.html" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/templates/exhibit/user_p.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exhibit/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exhibit/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-    </list>
+    <list default="true" id="b7cd9628-db97-4d25-b214-af26811e2fa6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,12 +258,12 @@
       <workItem from="1558853325923" duration="18010000" />
       <workItem from="1559503530074" duration="51000" />
       <workItem from="1559503834807" duration="337000" />
-      <workItem from="1560363238242" duration="528000" />
+      <workItem from="1560363238242" duration="686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87997000" />
+    <option name="totallyTimeSpent" value="88155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -301,9 +276,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18669528" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18669528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -317,7 +291,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3083049" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3083049" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32764506" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
